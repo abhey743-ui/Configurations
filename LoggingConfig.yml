@@ -1,0 +1,10 @@
+logging:
+  level:
+    com:
+      eazybytes:
+        accounts: DEBUG
+
+        // this is for the open Telemetry integration
+        
+  pattern:
+    level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"
